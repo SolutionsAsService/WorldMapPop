@@ -15,7 +15,7 @@ const countryGroups = {
         "United States", "Canada", "United Kingdom", "France", "Germany", "Italy", "Turkey", 
         "Poland", "Spain", "Belgium", "Norway", "Denmark", "Iceland", "Luxembourg", "Netherlands", 
         "Portugal", "Greece", "Czech Republic", "Hungary", "Bulgaria", "Romania", "Slovakia", 
-        "Slovenia", "Estonia", "Latvia", "Lithuania", "Albania", "Croatia", "Montenegro", "North Macedonia"
+        "Slovenia", "Estonia", "Latvia", "Lithuania", "Albania", "Croatia", "Montenegro", "North Macedonia", "Finland", "Sweden"
     ],
     gcc: [
         "Saudi Arabia", "United Arab Emirates", "Qatar", "Kuwait", "Bahrain", "Oman"
