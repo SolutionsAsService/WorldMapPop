@@ -1,0 +1,45 @@
+{
+  "nato": {
+    "countries": [
+      "United States", "Canada", "United Kingdom", "France", "Germany", "Italy", "Turkey",
+      "Poland", "Spain", "Belgium", "Norway", "Denmark", "Iceland", "Luxembourg", "Netherlands",
+      "Portugal", "Greece", "Czech Republic", "Hungary", "Bulgaria", "Romania", "Slovakia",
+      "Slovenia", "Estonia", "Latvia", "Lithuania", "Albania", "Croatia", "Montenegro",
+      "North Macedonia", "Finland", "Sweden"
+    ],
+    "color": "blue"
+  },
+  "gcc": {
+    "countries": ["Saudi Arabia", "United Arab Emirates", "Qatar", "Kuwait", "Bahrain", "Oman"],
+    "color": "green"
+  },
+  "asean": {
+    "countries": [
+      "Indonesia", "Malaysia", "Thailand", "Vietnam", "Philippines", "Singapore",
+      "Myanmar", "Cambodia", "Laos", "Brunei"
+    ],
+    "color": "green"
+  },
+  "africanUnion": {
+    "countries": [
+      "Algeria", "Angola", "Benin", "Botswana", "Burkina Faso", "Burundi", "Cabo Verde", "Cameroon",
+      "Central African Republic", "Chad", "Comoros", "Congo (Democratic Republic)", "Congo (Republic)",
+      "Djibouti", "Egypt", "Equatorial Guinea", "Eritrea", "Eswatini", "Ethiopia", "Gabon",
+      "Gambia", "Ghana", "Guinea", "Guinea-Bissau", "Ivory Coast", "Kenya", "Lesotho", "Liberia",
+      "Libya", "Madagascar", "Malawi", "Mali", "Mauritania", "Mauritius", "Morocco", "Mozambique",
+      "Namibia", "Niger", "Nigeria", "Rwanda", "Sao Tome and Principe", "Senegal", "Seychelles",
+      "Sierra Leone", "Somalia", "South Africa", "South Sudan", "Sudan", "Tanzania", "Togo",
+      "Tunisia", "Uganda", "Zambia", "Zimbabwe"
+    ],
+    "color": "green"
+  },
+  "eu": {
+    "countries": [
+      "Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic", "Denmark", "Estonia",
+      "Finland", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy", "Latvia", "Lithuania",
+      "Luxembourg", "Malta", "Netherlands", "Poland", "Portugal", "Romania", "Slovakia", "Slovenia",
+      "Spain", "Sweden"
+    ],
+    "color": "blue"
+  }
+}
