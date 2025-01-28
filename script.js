@@ -15,7 +15,7 @@ let countryGroups = {};
 fetch('groups.json')
     .then(response => response.json())
     .then(data => {
-        countryGroups = data;
+        countryGroups = data.countryGroups; // Adjust to match the structure
         populateDropdown(Object.keys(countryGroups));
     })
     .catch(error => console.error('Error fetching country groups:', error));
@@ -49,6 +49,11 @@ fetch('https://raw.githubusercontent.com/johan/world.geo.json/master/countries.g
 // Function to populate dropdown
 function populateDropdown(groups) {
     const dropdown = document.getElementById('group-select');
+    const defaultOption = document.createElement('option');
+    defaultOption.value = 'all';
+    defaultOption.textContent = 'All Countries';
+    dropdown.appendChild(defaultOption);
+
     groups.forEach(group => {
         const option = document.createElement('option');
         option.value = group;
@@ -63,7 +68,7 @@ function fetchCountryData(countryName) {
         .then(response => response.json())
         .then(data => {
             const country = data[0];
-            const population = country.population;
+            const population = country.population || 'Unknown';
 
             document.getElementById('country-name').textContent = `Country: ${countryName}`;
             document.getElementById('country-population').textContent = `Population: ${population.toLocaleString()}`;
@@ -87,26 +92,27 @@ function filterCountriesByGroup(group, data) {
     } else {
         const groupCountries = countryGroups[group].countries;
         const groupColor = countryGroups[group].color;
+
         filteredData = {
             type: 'FeatureCollection',
             features: data.features.filter(feature =>
                 groupCountries.includes(feature.properties.name)
             ),
         };
-
-        geoJsonLayer = L.geoJSON(filteredData, {
-            style: {
-                color: '#555',
-                weight: 1,
-                fillColor: groupColor,
-                fillOpacity: 0.6,
-            },
-            onEachFeature: (feature, layer) => {
-                layer.on('click', () => {
-                    const countryName = feature.properties.name;
-                    fetchCountryData(countryName);
-                });
-            },
-        }).addTo(map);
     }
+
+    geoJsonLayer = L.geoJSON(filteredData, {
+        style: {
+            color: '#555',
+            weight: 1,
+            fillColor: countryGroups[group]?.color || '#aaa',
+            fillOpacity: 0.6,
+        },
+        onEachFeature: (feature, layer) => {
+            layer.on('click', () => {
+                const countryName = feature.properties.name;
+                fetchCountryData(countryName);
+            });
+        },
+    }).addTo(map);
 }
