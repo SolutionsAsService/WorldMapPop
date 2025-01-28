@@ -1,4 +1,5 @@
 {
+  "countryGroups": {
   "nato": {
     "countries": [
       "United States", "Canada", "United Kingdom", "France", "Germany", "Italy", "Turkey",
@@ -88,4 +89,5 @@
       "countries": ["Chile", "Colombia", "Mexico", "Peru"],
       "color": "#1ABC9C"
     }
+}
 }
