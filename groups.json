@@ -41,5 +41,51 @@
       "Spain", "Sweden"
     ],
     "color": "blue"
-  }
+  },
+  "brics": {
+      "countries": ["Brazil", "Russia", "India", "China", "South Africa"],
+      "color": "#FF5733"
+    },
+    "g7": {
+      "countries": ["United States", "Canada", "France", "Germany", "Italy", "Japan", "United Kingdom"],
+      "color": "#4287F5"
+    },
+    "mercosur": {
+      "countries": ["Argentina", "Brazil", "Paraguay", "Uruguay", "Venezuela"],
+      "color": "#FFC300"
+    },
+    "saarc": {
+      "countries": ["Afghanistan", "Bangladesh", "Bhutan", "India", "Maldives", "Nepal", "Pakistan", "Sri Lanka"],
+      "color": "#28A745"
+    },
+    "arabLeague": {
+      "countries": [
+        "Algeria", "Bahrain", "Comoros", "Djibouti", "Egypt", "Iraq", "Jordan", "Kuwait",
+        "Lebanon", "Libya", "Mauritania", "Morocco", "Oman", "Palestine", "Qatar", "Saudi Arabia",
+        "Somalia", "Sudan", "Syria", "Tunisia", "United Arab Emirates", "Yemen"
+      ],
+      "color": "#E74C3C"
+    },
+    "cptpp": {
+      "countries": [
+        "Australia", "Brunei", "Canada", "Chile", "Japan", "Malaysia", "Mexico", "New Zealand",
+        "Peru", "Singapore", "Vietnam"
+      ],
+      "color": "#17A2B8"
+    },
+    "ecowas": {
+      "countries": [
+        "Benin", "Burkina Faso", "Cape Verde", "Ivory Coast", "Gambia", "Ghana", "Guinea",
+        "Guinea-Bissau", "Liberia", "Mali", "Niger", "Nigeria", "Senegal", "Sierra Leone", "Togo"
+      ],
+      "color": "#F39C12"
+    },
+    "eaeu": {
+      "countries": ["Armenia", "Belarus", "Kazakhstan", "Kyrgyzstan", "Russia"],
+      "color": "#9B59B6"
+    },
+    "pacificAlliance": {
+      "countries": ["Chile", "Colombia", "Mexico", "Peru"],
+      "color": "#1ABC9C"
+    }
 }
